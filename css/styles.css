@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@font-face {
+  font-family: "norseregular";
+  src: url("../fonts/norse-kawl-webfont.woff") format("woff"),
+    url("../fonts/norse-kawl-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -147,7 +155,7 @@ p {
 }
 
 .button a {
-  color: var(--black-color);
+  color: var(--dark-blue-color);
 }
 
 html {
@@ -155,9 +163,9 @@ html {
 
   scroll-behavior: smooth;
 
-  --black-color: #000000;
-  --brown-color: #381c00;
-  --blue-color: #429ea6;
+  --dark-blue-color: #0a121e;
+  --blue-color: #134e4d;
+  --light-blue-color: #43ab94;
   --white-color: #ffffff;
 }
 
@@ -178,15 +186,23 @@ header {
 }
 
 .secondary-header {
-  background-color: var(--black-color);
+  background-color: var(--dark-blue-color);
 }
 
 .logo {
   flex: 1;
 }
 
-.minilogo {
+.minilogo h1 {
+  font-family: "WebFont", norseregular, sans-serif;
+  font-size: 3.5em;
+  color: var(--white-color);
+  text-shadow: 7px 7px 5px #000000bf;
 }
+
+/*.minilogo span {
+  font-size: 3.5em;
+}*/
 
 .nav {
   flex: 1;
@@ -232,7 +248,7 @@ header {
   width: 100%;
   height: 1px;
 
-  background-color: var(--black-color);
+  background-color: var(--dark-blue-color);
 }
 
 /************************************ HERO ************************************/
@@ -322,10 +338,10 @@ header {
   margin: 30px 0 49px 0;
   padding-bottom: 12px;
 
-  color: var(--brown-color);
+  color: var(--blue-color);
   text-transform: uppercase;
 
-  border-bottom: 2px solid var(--brown-color);
+  border-bottom: 2px solid var(--blue-color);
 }
 
 .route-header p {
@@ -341,7 +357,7 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--brown-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
 }
 
@@ -359,7 +375,7 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--black-color);
+  background-color: var(--dark-blue-color);
   color: var(--white-color);
 }
 
@@ -371,7 +387,7 @@ header {
 }
 
 .route-timeline .active {
-  color: var(--blue-color);
+  color: var(--light-blue-color);
 }
 
 .route-photo {

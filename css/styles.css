@@ -256,7 +256,7 @@ header {
   width: 100%;
   height: 500px;
 
-  background-color: #134e4d ;
+  background-color: #134e4d;
 }
 
 button {
@@ -266,6 +266,11 @@ button {
 
 .btn-bg-dark {
   background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+.btn-bg-light {
+  background-color: var(--blue-color);
   color: var(--white-color);
 }
 
@@ -369,14 +374,14 @@ button {
 }
 
 .history-photo {
-  width: 415.50px;
+  width: 415.5px;
   height: 278.63px;
-  
+
   background-color: black;
 }
 
 .history-item p {
-  padding: 15px; 
+  padding: 15px;
 }
 
 .history-era {
@@ -501,22 +506,243 @@ button {
 
 /************************************ HOW TO ************************************/
 
-.howto {
-  height: 1080px;
-}
-
 .howto .banner-section {
   background-image: url(../assets/howto-banner.png);
 }
 
-/************************************ ROUTES ************************************/
-
-.routes .content-section {
+.howto .content-section {
   padding: 0px 60px 0 60px;
 }
 
+.howto-initial-paragraph {
+  padding: 60px 120px 0 120px;
+}
+
+/************************************ GET TO ************************************/
+
+.getto {
+  padding: 60px;
+}
+
+.getto .content-section {
+  padding: 0px 120px 0 120px;
+}
+
+.getto-conveyance {
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.getto-options {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+.getto-options .active {
+  background-color: var(--blue-color);
+}
+
+.getto-option {
+  padding: 30px;
+}
+
+.getto-info {
+  padding: 50px;
+}
+
+.getto-photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.getto-photo {
+  width: 1219px;
+  height: 609.5px;
+
+  margin-top: 50px;
+
+  background-color: black;
+}
+
+/************************************ TICKETS ************************************/
+
+.tickets {
+  padding: 60px;
+}
+
+.tickets-interface {
+  padding: 30px;
+
+  background-color: var(--dark-blue-color);
+}
+
+.tickets-item {
+  display: flex;
+}
+
+.tickets-item1,
+.tickets-item2,
+.tickets-item3 {
+  margin-bottom: 30px;
+}
+
+.tickets-item2,
+.tickets-item3 {
+  justify-content: space-between;
+}
+
+.tickets-item1,
+.tickets-item4 {
+  margin-left: 15px;
+}
+
+.tickets-item1 h2 {
+  color: var(--white-color);
+}
+
+.tickets-item input,
+.tickets-item select {
+  width: 31%;
+  padding: 15px;
+}
+
+.tickets-item button {
+  width: 170px;
+  height: 59px;
+
+  background-color: var(--blue-color);
+  color: var(--white-color);
+
+  text-transform: none;
+}
+
+/************************************ LODGING ************************************/
+
+.lodging {
+  padding: 60px;
+}
+
+.lodging .content-section {
+  padding: 0px 120px 0 120px;
+}
+
+.lodging-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lodging-item1 {
+  margin-bottom: 120px;
+}
+
+.lodging-option {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 30px;
+
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.lodging-option1,
+.lodging-option3 {
+  margin-right: 120px;
+}
+
+.lodging-icon {
+  width: 40%;
+  height: 100px;
+
+  margin-right: 30px;
+
+  background-color: black;
+}
+
+.lodging-info {
+  margin-right: 42px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.lodging-title {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.lodging-info p {
+  color: var(--light-blue-color);
+}
+
+/************************************ RESTAURANTS ************************************/
+
+.restaurants {
+  padding: 60px;
+}
+
+.restaurants .content-section {
+  padding: 0px 120px 0 120px;
+}
+
+.restaurants-interface {
+  display: flex;
+
+  padding: 60px;
+}
+
+.restaurants-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant {
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.restaurant-photo {
+  width: 400px;
+  height: 300px;
+
+  background-color: black;
+}
+
+.restaurant-info {
+  padding: 15px;
+}
+
+.restaurant-info h2 {
+  margin-bottom: 15px;
+}
+
+.restaurant-location p {
+  color: var(--light-blue-color);
+}
+
+.restaurants-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.restaurants-button button {
+  margin-left: 30px;
+}
+
+/************************************ ROUTES ************************************/
+
 .routes .banner-section {
   background-image: url(../assets/routes-banner.png);
+}
+
+.routes .content-section {
+  padding: 0px 60px 0 60px;
 }
 
 .routes-initial-paragraph {
@@ -587,7 +813,7 @@ button {
   padding: 0 25px 0 25px;
 }
 
-.route-timeline {
+/*.route-timeline {
   height: 73.5px;
 
   display: flex;
@@ -607,6 +833,382 @@ button {
 
 .route-timeline .active {
   color: var(--light-blue-color);
+}*/
+
+.cd-horizontal-timeline {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cd-horizontal-timeline::before {
+  content: "mobile";
+  display: none;
+}
+.cd-horizontal-timeline.loaded {
+  opacity: 1;
+}
+.cd-horizontal-timeline .timeline {
+  position: relative;
+  height: 100px;
+  margin: 0 auto;
+
+  background-color: var(--dark-blue-color);
+}
+.cd-horizontal-timeline .events-wrapper {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.cd-horizontal-timeline .events-wrapper::after,
+.cd-horizontal-timeline .events-wrapper::before {
+  /* these are used to create a shadow effect at the sides of the timeline */
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 20px;
+}
+.cd-horizontal-timeline .events {
+  /* this is the grey line/timeline */
+  position: absolute;
+  z-index: 1;
+  top: 49px;
+  width: 100%;
+  height: 2px;
+  /* width will be set using JavaScript */
+  background: var(--white-color);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white-color);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cd-horizontal-timeline .events a {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  color: var(--white-color);
+  /* fix bug on Safari - text flickering while timeline translates */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-horizontal-timeline .events a::after {
+  content: "";
+  position: absolute;
+  left: 31%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  background-color: var(--white-color);
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  -moz-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: var(--light-blue-color);
+  border-color: var(--light-blue-color);
+}
+.cd-horizontal-timeline .events a.ui-link {
+  font-size: 0.7em;
+}
+.cd-horizontal-timeline .events a.selected {
+  font-size: 0.7em;
+  pointer-events: none;
+}
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: var(--light-blue-color);
+  border-color: var(--light-blue-color);
+}
+.cd-horizontal-timeline .events a.older-event {
+  font-size: 0.7em;
+}
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: var(--light-blue-color);
+}
+.cd-timeline-navigation a {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.cd-timeline-navigation a::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 70%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Red_Arrow_Right.svg/2048px-Red_Arrow_Right.svg.png);
+}
+.cd-timeline-navigation a.prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.cd-timeline-navigation a.next {
+  right: 0;
+}
+.no-touch .cd-timeline-navigation a:hover {
+  border-color: var(--light-blue-color);
+}
+.cd-timeline-navigation a.inactive {
+  cursor: not-allowed;
+}
+.no-touch .cd-timeline-navigation a.inactive:hover {
+  border-color: var(--white-color);
+}
+.cd-horizontal-timeline .events-content {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s;
+}
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-horizontal-timeline .events-content li.enter-right,
+.cd-horizontal-timeline .events-content li.leave-right {
+  -webkit-animation-name: cd-enter-right;
+  -moz-animation-name: cd-enter-right;
+  animation-name: cd-enter-right;
+}
+.cd-horizontal-timeline .events-content li.enter-left,
+.cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-name: cd-enter-left;
+  -moz-animation-name: cd-enter-left;
+  animation-name: cd-enter-left;
+}
+.cd-horizontal-timeline .events-content li.leave-right,
+.cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.cd-horizontal-timeline .events-content li > *:not(:last-child) {
+  max-width: 840px;
+}
+.cd-horizontal-timeline .events-content li > *:not(:first-child) {
+  margin: 0 2em 0 3em;
+  line-height: 30px;
+}
+.cd-horizontal-timeline .events-content h2 {
+  font-weight: bold;
+  font-size: 2.6rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.cd-horizontal-timeline .events-content em {
+  display: block;
+  font-style: italic;
+  margin: 10px auto;
+}
+.cd-horizontal-timeline .events-content em::before {
+  content: "- ";
+}
+.cd-horizontal-timeline .events-content p {
+  font-size: 2rem;
+}
+.cd-horizontal-timeline .events-content em,
+.cd-horizontal-timeline .events-content p {
+  line-height: 1.6;
+}
+@media only screen and (min-width: 768px) {
+  .cd-horizontal-timeline .events-content h2 {
+    font-size: 7rem;
+  }
+
+  .cd-horizontal-timeline .events-content em {
+    font-size: 2rem;
+  }
+
+  .cd-horizontal-timeline .events-content p {
+    width: 37%;
+    font-size: 1.5rem;
+  }
+}
+@-webkit-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
 
 .route-photo {
@@ -700,10 +1302,82 @@ button {
 
 /************************************ CONTACT ************************************/
 
-.contact {
-  height: 1080px;
-}
-
 .contact .banner-section {
   background-image: url(../assets/contact-banner.png);
+}
+
+.contact .content-section {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 60px;
+}
+
+.contact-photo {
+  width: 48%;
+  background-color: black;
+}
+
+.contact-fields {
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-fields input,
+.contact-fields select {
+  width: 100%;
+  height: 58px;
+
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-fields textarea {
+  width: 100%;
+  height: 206px;
+
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-fields button {
+  width: 100%;
+  height: 58px;
+}
+
+/************************************ OFFICES ************************************/
+
+.offices {
+  padding: 60px;
+}
+
+.offices-initial-paragraph {
+  padding: 0 120px 0 120px;
+}
+
+.offices-interface {
+  padding: 60px 120px 0 120px;
+}
+
+.office-info {
+  width: max-content;
+
+  padding: 60px;
+
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.office-info h2,
+.office-info .location,
+.office-info .phone {
+  margin-bottom: 15px;
+}
+
+.office-info .location,
+.office-info .phone,
+.office-info .mail {
+  margin-left: 30px;
 }

@@ -240,8 +240,9 @@ header {
   text-transform: uppercase;
 }
 
-.content-section {
-  padding: 60px;
+.section-header {
+  margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .line-decoration {
@@ -249,6 +250,23 @@ header {
   height: 1px;
 
   background-color: var(--dark-blue-color);
+}
+
+.parallax {
+  width: 100%;
+  height: 500px;
+
+  background-color: #134e4d ;
+}
+
+button {
+  width: 178px;
+  height: 41px;
+}
+
+.btn-bg-dark {
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
 }
 
 /************************************ HERO ************************************/
@@ -268,7 +286,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  margin-top: 250px;
+  margin-top: 109px;
 
   color: var(--white-color);
   text-shadow: 7px 7px 5px #000000bf;
@@ -279,7 +297,206 @@ header {
 }
 
 .legend h1 {
-  margin: 20px 0 20px 0;
+  margin-top: 48px;
+}
+
+/************************************ HOME ************************************/
+
+.home {
+  padding: 60px 180px 60px 180px;
+}
+
+.home-initial-paragraph {
+  margin-bottom: 60px;
+}
+
+.home-initial-photo {
+  width: 1560px;
+  height: 633.59px;
+
+  background-color: black;
+}
+
+/************************************ CITIES ************************************/
+
+.cities {
+  padding: 60px;
+}
+
+.cities .content-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-header {
+  margin-bottom: 30px;
+
+  color: var(--light-blue-color);
+}
+
+.city-photo {
+  width: 870.14px;
+  height: 479.54px;
+
+  margin-top: 30px;
+
+  background-color: black;
+}
+
+.cities-map {
+  height: 0;
+  width: 0;
+
+  background-color: red;
+}
+
+/************************************ HISTORY ************************************/
+
+.history {
+  padding: 60px;
+}
+
+.history .content-section {
+  padding: 0 66px 0 66px;
+}
+
+.history-slider {
+  display: flex;
+}
+
+.history-item {
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.history-photo {
+  width: 415.50px;
+  height: 278.63px;
+  
+  background-color: black;
+}
+
+.history-item p {
+  padding: 15px; 
+}
+
+.history-era {
+  padding: 15px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.history-era span {
+  text-transform: lowercase;
+}
+
+.history-era-bg-dark {
+  background-color: var(--dark-blue-color);
+}
+
+.history-era-bg-light {
+  background-color: var(--blue-color);
+}
+
+/************************************ GASTRONOMY ************************************/
+
+.gastronomy {
+  padding: 60px;
+}
+
+.gastronomy-item1,
+.gastronomy-item2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gastronomy-item1 {
+  margin-bottom: 30px;
+}
+
+.gastronomy-dish {
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.gastronomy-dish-photo {
+  width: 580.04px;
+  height: 387px;
+
+  background-color: black;
+}
+
+.gastronomy-dish-info {
+  padding: 15px;
+}
+
+.gastronomy-dish h2,
+.gastronomy-dish p {
+  margin-bottom: 15px;
+}
+
+.gastronomy-dish p {
+  color: var(--blue-color);
+}
+
+.gastronomy-button {
+  display: flex;
+  justify-content: end;
+
+  margin-bottom: 30px;
+}
+
+/************************************ FAUNA ************************************/
+
+.fauna {
+  padding: 60px;
+}
+
+.fauna-item1,
+.fauna-item2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fauna-item1 {
+  margin-bottom: 30px;
+}
+
+.fauna-animal {
+  border: 0.05px solid var(--dark-blue-color);
+}
+
+.fauna-animal-photo {
+  width: 435.58px;
+  height: 332px;
+
+  background-color: black;
+}
+
+.fauna-animal-info {
+  display: flex;
+
+  padding: 15px;
+}
+
+.fauna-animal-decoration {
+  width: 5px;
+  height: 70px;
+
+  margin-right: 15px;
+
+  background-color: var(--light-blue-color);
+}
+
+.fauna-animal-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fauna-animal-name p {
+  color: var(--blue-color);
 }
 
 /************************************ HOW TO ************************************/
@@ -294,8 +511,8 @@ header {
 
 /************************************ ROUTES ************************************/
 
-.routes {
-  height: 1080px;
+.routes .content-section {
+  padding: 0px 60px 0 60px;
 }
 
 .routes .banner-section {
@@ -303,7 +520,7 @@ header {
 }
 
 .routes-initial-paragraph {
-  padding: 0 120px 0 120px;
+  padding: 60px 120px 0 120px;
 }
 
 .routes-initial-photo {
@@ -316,6 +533,8 @@ header {
   background-position: center center;
 
   margin: 60px 0 60px 0;
+
+  background-color: black;
 }
 
 .route {
@@ -426,6 +645,57 @@ header {
 
 .route-photo p {
   width: 467px;
+}
+
+/************************************ ACTIVITIES ************************************/
+
+.activities {
+  padding: 60px;
+}
+
+.activities .content-section {
+  padding: 0 120px 0 120px;
+}
+
+.activity-header {
+  margin-bottom: 60px;
+
+  text-transform: uppercase;
+}
+
+.activity-header h2 {
+  margin-bottom: 31px;
+
+  color: var(--blue-color);
+}
+
+.activity-header-aternative {
+  text-align: end;
+}
+
+.activity {
+  margin-bottom: 90px;
+}
+
+.activity-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-text {
+  width: 48%;
+}
+
+.activity-photo {
+  width: 48%;
+  height: 500px;
+
+  background-color: black;
+}
+
+.activity-button {
+  text-align: center;
+  margin-top: 60px;
 }
 
 /************************************ CONTACT ************************************/

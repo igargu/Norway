@@ -10,12 +10,13 @@
     <header class="secondary-header">
       <div class="logo">
         <div class="minilogo">
-          <h1>norway</h1>
+          <span class="rune"><h1>ᛉ</h1></span>
+          <span class="text"><h1>norway</h1></span>
         </div>
       </div>
       <div class="nav">
         <ul class="regular-nav">
-          <li class="item item1"><a href="home.html">home</a></li>
+          <li class="item item1"><a href="index.html">home</a></li>
           <li class="item item1"><a href="howto.html">how to</a></li>
           <li class="item item1"><a href="routes.html">routes</a></li>
           <li class="item item1"><a href="contact.html">contact</a></li>
@@ -27,7 +28,30 @@
         <h1>contact</h1>
       </div>
       <div class="content-section">
-        <div class="contact-photo"></div>
+        <div class="contact-info">
+          <h2>We are here for you. How we can help?</h2>
+          <div class="contact-info-box">
+            <div class="social-media">
+              <div class="social-media-icon instagram-icon"></div>
+              <div class="social-media-icon facebook-icon"></div>
+              <div class="social-media-icon twitter-icon"></div>
+            </div>
+            <div class="contact-methods">
+              <div class="location">
+                <div class="contact-methods-icon location-icon"></div>
+                <p>Sentrum 2 NO-0158 Oslo, Norway</p>
+              </div>
+              <div class="mail">
+                <div class="contact-methods-icon mail-icon"></div>
+                <p>info@tourismnorway.com</p>
+              </div>
+              <div class="phone">
+                <div class="contact-methods-icon phone-icon"></div>
+                <p>+45 77 17 93 33</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="contact-fields">
           <input type="text" id="name" placeholder="Name*" />
           <input type="text" id="email" placeholder="Email*" />
@@ -62,16 +86,16 @@
         <div class="offices-map"></div>
         <div class="office-info">
           <h2>Bergen tourism office</h2>
-          <div class="location">
-            <div class="location-icon"></div>
+          <div class="office-location">
+            <div class="office-icons location-icon"></div>
             <p>Strandkaien 3 NO-5014 Bergen Norway</p>
           </div>
-          <div class="phone">
-            <div class="phone-icon"></div>
+          <div class="office-phone">
+            <div class="office-icons phone-icon"></div>
             <p>(+47) 55 55 20 00</p>
           </div>
-          <div class="mail">
-            <div class="mail-icon"></div>
+          <div class="office-mail">
+            <div class="office-icons mail-icon"></div>
             <p>info@tourismbergen.com</p>
           </div>
         </div>
@@ -83,8 +107,45 @@
       <div class="partner partner3"></div>
       <div class="partner partner4"></div>
     </div>
-    <div class="newsletter"></div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer-sections">
+        <div class="footer-section1">
+          <div class="minilogo">
+            <span class="rune"><h1>ᛉ</h1></span>
+            <span class="text"><h1>norway</h1></span>
+          </div>
+        </div>
+        <div class="footer-section2">
+          <h2>Sections</h2>
+          <ul>
+            <li>Home</li>
+            <li>How To</li>
+            <li>Routes</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-section3">
+          <h2>Support</h2>
+          <ul>
+            <li>About</li>
+            <li>FAQs</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div class="footer-section4">
+          <input
+            type="email"
+            id="footer-email"
+            placeholder="Enter your e-mail address"
+          />
+          <button class="button btn-bg-light">Sign Up</button>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&#169; Copyright 2022 Norwegian Ministry of Tourism</p>
+      </div>
+    </div>
     <script src="../js/index.js"></script>
   </body>
 </html>

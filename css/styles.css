@@ -225,6 +225,49 @@ header {
   text-shadow: 7px 7px 5px #000000bf;
 }
 
+.collapsed-nav {
+  width: 50px;
+  height: 50px;
+
+  background-image: url(../assets/collapsed.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  filter: brightness(0) invert(1);
+
+  cursor: pointer;
+  display: none;
+
+  position: relative;
+}
+
+.collapsed-content {
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+  top: 60px;
+  right: 1px;
+
+  display: none;
+
+  background-color: var(--white-color);
+}
+
+.collapsed-content li {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  text-align: center;
+
+  padding: 50px;
+}
+
+.collapsed-content li a {
+  color: var(--dark-blue-color);
+}
+
 .banner-section {
   width: 100%;
   height: 300px;
@@ -321,7 +364,6 @@ button {
 }
 
 .home-initial-photo {
-  width: 1560px;
   height: 633.59px;
 
   background-image: url(../assets/home-initial-photo.png);
@@ -351,7 +393,6 @@ button {
 }
 
 .city-photo {
-  width: 870.14px;
   height: 479.54px;
 
   margin-top: 30px;
@@ -1309,6 +1350,7 @@ button {
     width: 30%;
   }
 }
+
 @-webkit-keyframes cd-enter-right {
   0% {
     opacity: 0;
@@ -1836,4 +1878,732 @@ button {
 
   background-color: var(--dark-blue-color);
   color: var(--white-color);
+}
+
+/************************************ MEDIA QUERY - TABLET ************************************/
+
+@media screen and (max-width: 1024px) {
+  /************* COMMON STYLES *************/
+
+  .nav {
+    flex: 2;
+  }
+
+  /************************************ HOME ************************************/
+
+  .home {
+    padding: 60px;
+  }
+
+  /************************************ CITIES ************************************/
+
+  .cities .content-section {
+    flex-direction: column;
+  }
+
+  .city {
+    flex: none;
+  }
+
+  .city-photo {
+    margin-bottom: 50px;
+  }
+
+  .cities-map {
+    flex: none;
+  }
+
+  /************************************ HISTORY ************************************/
+
+  .history-item2,
+  .history-item3,
+  .history-item4 {
+    display: none;
+  }
+
+  /************************************ GASTRONOMY ************************************/
+
+  .gastronomy .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gastronomy-item1,
+  .gastronomy-item2 {
+    flex-direction: column;
+  }
+
+  .gastronomy-dish1,
+  .gastronomy-dish2,
+  .gastronomy-dish4,
+  .gastronomy-dish5 {
+    margin-bottom: 30px;
+  }
+
+  .gastronomy-dish {
+    width: 586px;
+  }
+
+  .gastronomy-dish-photo {
+    width: 100%;
+  }
+
+  /************************************ FAUNA ************************************/
+
+  .fauna .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fauna-item1,
+  .fauna-item2 {
+    flex-direction: column;
+  }
+
+  .fauna-animal1,
+  .fauna-animal2,
+  .fauna-animal3,
+  .fauna-animal5,
+  .fauna-animal6,
+  .fauna-animal7 {
+    margin-bottom: 30px;
+  }
+
+  .fauna-animal {
+    width: 586px;
+  }
+
+  .fauna-animal-photo {
+    width: 100%;
+  }
+
+  /************************************ HOW TO ************************************/
+
+  .howto-initial-paragraph {
+    padding: 60px 0 0 0;
+  }
+
+  /************************************ GET TO ************************************/
+
+  .getto .content-section {
+    padding: 0;
+  }
+
+  .getto-photo {
+    height: 304.75px;
+  }
+
+  /************************************ TICKETS ************************************/
+
+  .tickets {
+    padding: 0 60px 0 60px;
+  }
+
+  .tickets-item2,
+  .tickets-item3,
+  .tickets-item4 {
+    flex-direction: column;
+  }
+
+  .tickets-item4 {
+    margin: 0;
+  }
+
+  .tickets-item input {
+    width: 94.9%;
+    margin-bottom: 30px;
+  }
+
+  .tickets-item select,
+  .tickets-item button {
+    width: 100%;
+  }
+
+  /************************************ LODGING ************************************/
+
+  .lodging .content-section {
+    padding: 0px;
+  }
+
+  .lodging-item {
+    flex-direction: column;
+
+    margin: 0;
+  }
+
+  .lodging-option {
+    margin-bottom: 30px;
+  }
+
+  /************************************ RESTAURANTS ************************************/
+
+  .restaurants .content-section {
+    padding: 0px 60px 0 60px;
+  }
+
+  .restaurant2,
+  .restaurant3 {
+    display: none;
+  }
+
+  /************************************ ROUTES ************************************/
+
+  .routes-initial-paragraph {
+    padding: 60px 0 0 0;
+  }
+
+  .route {
+    padding: 60px 0 0 0;
+  }
+
+  .cd-horizontal-timeline .events ol {
+    padding-left: 30px;
+  }
+
+  .cd-horizontal-timeline .events-content p {
+    width: 100%;
+  }
+
+  /************************************ ACTIVITIES ************************************/
+
+  .activities .content-section {
+    padding: 0;
+  }
+
+  .activity-info {
+    flex-direction: column;
+  }
+
+  .activity-text {
+    width: 100%;
+  }
+
+  .activity-photo1,
+  .activity-photo3 {
+    margin-bottom: 60px;
+  }
+
+  .activity-photo2 {
+    margin-top: 60px;
+  }
+
+  /************************************ CONTACT ************************************/
+
+  .contact .content-section {
+    flex-direction: column;
+
+    padding: 60px;
+  }
+
+  .contact-info-box {
+    margin-bottom: 60px;
+  }
+
+  .contact-fields {
+    width: 100%;
+  }
+
+  .contact-fields input {
+    width: 97.5%;
+  }
+
+  .contact-fields textarea {
+    width: 96%;
+  }
+
+  .contact-fields select,
+  .contact-fields button {
+    width: 100%;
+  }
+
+  /************************************ OFFICES ************************************/
+
+  .offices-initial-paragraph {
+    padding: 0;
+  }
+
+  .offices-interface {
+    flex-direction: column;
+  }
+
+  .offices-map {
+    flex: none;
+
+    margin-bottom: 60px;
+  }
+
+  .office-info {
+    position: static;
+  }
+
+  /************************************ PARTNERS ************************************/
+
+  .partners {
+    padding: 60px 60px 60px 60px;
+  }
+
+  /************************************ FOOTER ************************************/
+
+  .footer-sections {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .footer-section2,
+  .footer-section3 {
+    text-align: center;
+  }
+}
+
+/************************************ MEDIA QUERY - PHONE ************************************/
+
+@media screen and (max-width: 768px) {
+  /************* COMMON STYLES *************/
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    flex: 0;
+  }
+
+  .regular-nav {
+    display: none;
+  }
+
+  .collapsed-nav {
+    display: block;
+  }
+
+  /************************************ HOME ************************************/
+
+  .home {
+    padding: 30px;
+  }
+
+  .home-initial-paragraph {
+    margin-bottom: 30px;
+  }
+
+  .home-initial-photo {
+    height: 316.795px;
+  }
+
+  /************************************ CITIES ************************************/
+
+  .cities {
+    padding: 30px;
+  }
+
+  .city-photo {
+    height: 239.77px;
+  }
+
+  .cities-map {
+    width: 100%;
+    height: 410.97px;
+  }
+
+  /************************************ HISTORY ************************************/
+
+  .history {
+    padding: 30px 0 30px 0;
+  }
+
+  .history .section-header {
+    padding: 0 30px 0 30px;
+  }
+
+  .history-item {
+    height: fit-content;
+  }
+
+  /************************************ GASTRONOMY ************************************/
+
+  .gastronomy {
+    padding: 30px;
+  }
+
+  .gastronomy-dish {
+    width: 400px;
+  }
+
+  .gastronomy-dish-photo {
+    height: 300px;
+  }
+
+  .gastronomy-button {
+    margin-bottom: 0;
+  }
+
+  /************************************ FAUNA ************************************/
+
+  .fauna {
+    padding: 30px;
+  }
+
+  .fauna-animal {
+    width: 400px;
+  }
+
+  .fauna-animal-photo {
+    height: 300px;
+  }
+
+  /************************************ HOW TO ************************************/
+
+  .howto .content-section {
+    padding: 0;
+  }
+
+  .howto-initial-paragraph {
+    padding: 30px 30px 0 30px;
+  }
+
+  /************************************ GET TO ************************************/
+
+  .getto {
+    padding: 30px;
+  }
+
+  .getto .content-section {
+    padding: 0;
+  }
+
+  .getto-options {
+    justify-content: center;
+  }
+
+  .getto-option2,
+  .getto-option3,
+  .getto-option4,
+  .getto-option5 {
+    display: none;
+  }
+
+  .getto-options .active {
+    background-color: var(--dark-blue-color);
+  }
+
+  .getto-info {
+    padding: 30px;
+  }
+
+  .getto-photo-container {
+    display: none;
+  }
+
+  /************************************ TICKETS ************************************/
+
+  .tickets {
+    padding: 0 30px 0 30px;
+  }
+
+  .tickets-item input {
+    width: 90%;
+  }
+
+  /************************************ LODGING ************************************/
+
+  .lodging {
+    padding: 30px;
+  }
+
+  .lodging .content-section {
+    padding: 0;
+  }
+
+  .lodging-option {
+    width: 360px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lodging-info {
+    margin: 0;
+
+    text-align: center;
+  }
+
+  .lodging-icon {
+    flex: none;
+
+    margin: 0 0 30px 0;
+  }
+
+  .lodging-icon1 {
+    width: 122.4px;
+    height: 110px;
+  }
+
+  .lodging-icon2 {
+    width: 74.8px;
+    height: 130.34px;
+  }
+
+  .lodging-icon3 {
+    width: 121.605px;
+    height: 121.62px;
+  }
+
+  .lodging-icon4 {
+    width: 110.125px;
+    height: 110.125px;
+  }
+
+  /************************************ RESTAURANTS ************************************/
+
+  .restaurants {
+    padding: 30px;
+  }
+
+  .restaurants .section-header {
+    padding: 0;
+  }
+
+  .restaurants .content-section {
+    padding: 0;
+  }
+
+  .restaurants-interface {
+    padding: 30px 0 30px 0;
+  }
+
+  .restaurants-interface .left-arrow-icon,
+  .restaurants-interface .right-arrow-icon {
+    display: none;
+  }
+
+  .restaurants-slider {
+    padding: 0;
+  }
+
+  .restaurants-slider,
+  .restaurant {
+    width: 100%;
+  }
+
+  .restaurant-photo {
+    width: 100%;
+    height: 300px;
+  }
+
+  /************************************ ROUTES ************************************/
+
+  .routes .content-section {
+    padding: 0px 30px 0 30px;
+  }
+
+  .routes-initial-paragraph {
+    padding: 30px 0 0 0;
+  }
+
+  .routes-initial-photo {
+    height: 333px;
+
+    margin: 30px 0 0 0;
+  }
+
+  .route {
+    padding-top: 30px;
+  }
+
+  .route-header {
+    margin-bottom: 30px;
+  }
+
+  .route-header h2 {
+    font-size: 1.5em;
+  }
+
+  .route-header h1 {
+    font-size: 2.3em;
+
+    margin: 30px 0 30px 0;
+    padding-bottom: 12px;
+  }
+
+  .route-header p {
+    width: 100%;
+
+    font-size: 1.2em;
+  }
+
+  .route-information {
+    height: 100%;
+  }
+
+  .route-information ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .route-information ul li {
+    padding: 15px 0 15px 0;
+  }
+
+  .route-photo {
+    height: 450px;
+
+    margin-bottom: 60px;
+    padding: 30px;
+  }
+
+  .route-photo h2 {
+    font-size: 1.4em;
+  }
+
+  .route-photo h1 {
+    margin: 15px 0 15px 0;
+
+    font-size: 1.7em;
+  }
+
+  .route-photo p {
+    font-size: 1.2em;
+    line-height: 20px;
+  }
+
+  /************************************ ACTIVITIES ************************************/
+
+  .activities {
+    padding: 30px;
+  }
+
+  .activities .content-section {
+    padding: 0;
+  }
+
+  .activity-header {
+    margin-bottom: 30px;
+  }
+
+  .activity-header h2 {
+    font-size: 1.5em;
+
+    margin-bottom: 30px;
+  }
+
+  .activity-header h1 {
+    font-size: 1.8em;
+  }
+
+  .activity-photo {
+    width: 100%;
+    height: 250px;
+  }
+
+  .activity-button {
+    margin-top: 30px;
+  }
+
+  /************************************ CONTACT ************************************/
+
+  .contact .content-section {
+    padding: 30px;
+  }
+
+  .contact-info h2 {
+    text-align: center;
+  }
+
+  .contact-info-box {
+    padding: 30px;
+  }
+
+  .facebook-icon {
+    margin: 0 100px 0 100px;
+  }
+
+  .contact-methods p {
+    font-size: 1.2em;
+  }
+
+  .contact-methods-icon {
+    margin-right: 19px;
+  }
+
+  .contact-fields input {
+    width: 94.5%;
+  }
+
+  .contact-fields textarea {
+    width: 93%;
+  }
+
+  /************************************ OFFICES ************************************/
+
+  .offices {
+    padding: 30px;
+  }
+
+  .offices .section-header h1 {
+    font-size: 2.5em;
+  }
+
+  .offices-interface {
+    padding: 30px;
+  }
+
+  .offices-map {
+    width: 450px;
+    height: 410.97px;
+  }
+
+  .office-info {
+    width: max-content;
+
+    padding: 30px;
+  }
+
+  .office-icons {
+    margin-right: 15px;
+  }
+
+  .office-info h2 {
+    font-size: 1.4em;
+  }
+
+  .office-info p {
+    font-size: 1em;
+  }
+
+  /************************************ PARTNERS ************************************/
+
+  .partners {
+    padding: 30px;
+  }
+
+  .partner {
+    width: 50px;
+    height: 47.5px;
+  }
+
+  /************************************ FOOTER ************************************/
+
+  .footer-sections {
+    flex-direction: column;
+  }
+
+  .footer-section1 {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 46px;
+  }
+
+  .footer-section4 button {
+    width: 100%;
+  }
+
+  .footer-copy {
+    padding: 30px;
+  }
+
+  .footer-copy p {
+    font-size: 1em;
+  }
 }

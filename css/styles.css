@@ -153,6 +153,10 @@ p {
   color: var(--dark-blue-color);
 }
 
+::placeholder {
+  color: var(--dark-blue-color);
+}
+
 html {
   height: 100%;
 
@@ -160,7 +164,7 @@ html {
 
   --dark-blue-color: #0a121e;
   --blue-color: #134e4d;
-  --light-blue-color: #43ab94;
+  --light-blue-color: #43a992;
   --dark-blue-color-footer: #111924;
   --light-blue-color-footer: #181f2a;
   --white-color: #ffffff;
@@ -234,8 +238,6 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
 
-  filter: brightness(0) invert(1);
-
   cursor: pointer;
   display: none;
 
@@ -266,6 +268,10 @@ header {
 
 .collapsed-content li a {
   color: var(--dark-blue-color);
+}
+
+.show {
+  display: block;
 }
 
 .banner-section {
@@ -299,9 +305,7 @@ header {
 
 .parallax {
   width: 100%;
-  height: 500px;
-
-  background-color: #134e4d;
+  height: 100px;
 }
 
 button {
@@ -389,7 +393,7 @@ button {
 .city-header {
   margin-bottom: 30px;
 
-  color: var(--light-blue-color);
+  color: var(--blue-color);
 }
 
 .city-photo {
@@ -718,7 +722,7 @@ button {
 }
 
 .getto-option {
-  padding: 30px;
+  padding: 30px 90px 30px 90px;
 }
 
 .getto-info {
@@ -903,7 +907,7 @@ button {
 }
 
 .lodging-info p {
-  color: var(--light-blue-color);
+  color: var(--blue-color);
 }
 
 /************************************ RESTAURANTS ************************************/
@@ -986,8 +990,24 @@ button {
   margin-bottom: 15px;
 }
 
+.restaurant-location {
+  display: flex;
+}
+
+.restaurant-location-icon {
+  width: 17.2px;
+  height: 24.76px;
+
+  margin-right: 5px;
+
+  background-image: url(../assets/location-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .restaurant-location p {
-  color: var(--light-blue-color);
+  color: var(--blue-color);
 }
 
 .restaurants-button {
@@ -1521,7 +1541,7 @@ button {
 }
 
 .activity-photo1 {
-  background-image: url(../assets/activities-photo1.png);
+  background-image: url(../assets/activities-photo1.jpg);
 }
 
 .activity-photo2 {
@@ -1856,6 +1876,10 @@ button {
   font-weight: 400;
 }
 
+.footer-section4 input::placeholder {
+  color: var(--white-color);
+}
+
 .footer-section4 button {
   margin-top: 10px;
 
@@ -1878,6 +1902,171 @@ button {
 
   background-color: var(--dark-blue-color);
   color: var(--white-color);
+}
+
+/************************************ ADDITIONAL MEDIA QUERIES ************************************/
+
+@media screen and (max-width: 1666px) {
+  /************************************ HOME ************************************/
+
+  .home {
+    padding: 60px;
+  }
+
+  /************************************ HISTORY ************************************/
+
+  .history-slider {
+    flex-wrap: wrap;
+  }
+
+  /************************************ GASTRONOMY ************************************/
+
+  .gastronomy-item1,
+  .gastronomy-item2 {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+  /************************************ FAUNA ************************************/
+
+  .fauna-item1,
+  .fauna-item2 {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+  /************************************ HOW TO ************************************/
+
+  .howto .content-section {
+    padding: 0;
+  }
+
+  .howto-initial-paragraph {
+    padding: 60px 60px 0 60px;
+  }
+
+  /************************************ GET TO ************************************/
+
+  .getto .content-section {
+    padding: 0;
+  }
+
+  /************************************ TICKETS ************************************/
+
+  .tickets {
+    padding: 0 30px 0 30px;
+  }
+
+  /************************************ LODGING ************************************/
+
+  .lodging .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 50% 0 50%;
+  }
+
+  .lodging-item {
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+  .lodging-option {
+    margin-bottom: 60px;
+  }
+
+  /************************************ RESTAURANTS ************************************/
+
+  .restaurants-slider {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  /************************************ ROUTES ************************************/
+
+  .route {
+    padding: 30px;
+  }
+
+  .routes-initial-paragraph {
+    padding: 30px;
+  }
+
+  .cd-horizontal-timeline .events-content p {
+    width: 90%;
+  }
+
+  /************************************ ACTIVITIES ************************************/
+
+  .activities .content-section {
+    padding: 0;
+  }
+
+  .activity-photo1,
+  .activity-photo3 {
+    margin-right: 30px;
+  }
+
+  .activity-photo2 {
+    margin-left: 30px;
+  }
+
+  /************************************ CONTACT ************************************/
+
+  .contact .content-section {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px;
+  }
+
+  .contact-info-box {
+    margin-bottom: 60px;
+  }
+
+  .contact-fields {
+    width: 100%;
+  }
+
+  .contact-fields input {
+    width: 97.5%;
+  }
+
+  .contact-fields textarea {
+    width: 96%;
+  }
+
+  .contact-fields select,
+  .contact-fields button {
+    width: 100%;
+  }
+
+  /************************************ OFFICES ************************************/
+
+  .offices-initial-paragraph {
+    padding: 0 60px 0 60px;
+  }
+
+  .offices-interface {
+    position: relative;
+    left: 60px;
+  }
+
+  .offices-map {
+    flex: none;
+  }
+
+  .office-location .location-icon {
+    width: 25px;
+  }
 }
 
 /************************************ MEDIA QUERY - TABLET ************************************/
@@ -1991,6 +2180,10 @@ button {
     padding: 0;
   }
 
+  .getto-option h2 {
+    font-size: 1.5em;
+  }
+
   .getto-photo {
     height: 304.75px;
   }
@@ -2034,6 +2227,7 @@ button {
   }
 
   .lodging-option {
+    margin: 0;
     margin-bottom: 30px;
   }
 
@@ -2216,6 +2410,15 @@ button {
     padding: 0 30px 0 30px;
   }
 
+  .history .left-arrow-icon,
+  .history .right-arrow-icon {
+    display: none;
+  }
+
+  .history-slider {
+    padding: 0;
+  }
+
   .history-item {
     height: fit-content;
   }
@@ -2320,6 +2523,8 @@ button {
 
     flex-direction: column;
     align-items: center;
+
+    margin: 0;
   }
 
   .lodging-info {
@@ -2453,18 +2658,22 @@ button {
   }
 
   .route-photo h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .route-photo h1 {
     margin: 15px 0 15px 0;
 
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
 
   .route-photo p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 20px;
+  }
+
+  .cd-horizontal-timeline .events-content p {
+    width: 100%;
   }
 
   /************************************ ACTIVITIES ************************************/
@@ -2493,7 +2702,7 @@ button {
 
   .activity-photo {
     width: 100%;
-    height: 250px;
+    height: 350px;
   }
 
   .activity-button {
@@ -2546,6 +2755,8 @@ button {
 
   .offices-interface {
     padding: 30px;
+
+    position: static;
   }
 
   .offices-map {

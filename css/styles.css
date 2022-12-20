@@ -225,8 +225,25 @@ header {
 }
 
 .regular-nav li a {
+  background: linear-gradient(0deg, white, white) no-repeat right bottom / 0
+    var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+.regular-nav li a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.regular-nav li a {
   color: var(--white-color);
   text-shadow: 7px 7px 5px #000000bf;
+
+  text-decoration: none;
+  line-height: 1;
 }
 
 .collapsed-nav {
@@ -319,11 +336,23 @@ button {
 .btn-bg-dark {
   background-color: var(--dark-blue-color);
   color: var(--white-color);
+  box-shadow: inset 0 0 0 0 var(--dark-blue-color);
+  transition: all 0.5s ease;
+}
+
+.btn-bg-dark:hover {
+  box-shadow: inset 0 0 0 50px #103a3d;
 }
 
 .btn-bg-light {
   background-color: var(--blue-color);
   color: var(--white-color);
+  box-shadow: inset 0 0 0 0 var(--blue-color);
+  transition: all 0.5s ease;
+}
+
+.btn-bg-light:hover {
+  box-shadow: inset 0 0 0 50px #236c64;
 }
 
 /************************************ HERO ************************************/
@@ -387,7 +416,13 @@ button {
 }
 
 .city {
+  display: none;
+}
+
+.city-active {
   flex: 1;
+
+  display: block;
 }
 
 .city-header {
@@ -400,21 +435,76 @@ button {
   height: 479.54px;
 
   margin-top: 30px;
+}
 
-  background-image: url(../assets/cities-oslo-photo.png);
-  background-size: cover;
+.city-photo-bergen {
+  background-image: url(../assets/cities-bergen-photo.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.cities-map {
-  width: 681.02px;
-  height: 821.95px;
-
-  background-image: url(../assets/map.svg);
+.city-photo-oslo {
+  background-image: url(../assets/cities-oslo-photo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.city-photo-kristiansand {
+  background-image: url(../assets/cities-kristiansand-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-stavanger {
+  background-image: url(../assets/cities-stavanger-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-lillehammer {
+  background-image: url(../assets/cities-lillehammer-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-trondheim {
+  background-image: url(../assets/cities-trondheim-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-alesund {
+  background-image: url(../assets/cities-alesund-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-bodo {
+  background-image: url(../assets/cities-bodo-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city-photo-tromso {
+  background-image: url(../assets/cities-tromso-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cities-map svg {
+  width: 681.02px;
+  height: 821.95px;
+
+  margin-left: 60px;
 
   flex: 1;
 }
@@ -492,6 +582,14 @@ button {
 
 .history-photo4 {
   background-image: url(../assets/history-photo4.png);
+}
+
+.history-photo5 {
+  background-image: url(../assets/history-photo5.png);
+}
+
+.history-photo6 {
+  background-image: url(../assets/history-photo6.png);
 }
 
 .history-item p {
@@ -591,6 +689,11 @@ button {
   justify-content: end;
 
   margin-bottom: 30px;
+}
+
+.gastronomy-button a,
+.gastronomy-button button {
+  cursor: pointer;
 }
 
 /************************************ FAUNA ************************************/
@@ -721,14 +824,35 @@ button {
   background-color: var(--blue-color);
 }
 
+.getto-options .active:hover {
+  box-shadow: inset 0 0 0 50px var(--blue-color);
+}
+
 .getto-option {
   padding: 30px 90px 30px 90px;
+
+  cursor: pointer;
+}
+
+.getto-option h2 {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--dark-blue-color);
+  transition: all 0.5s ease;
+}
+
+.getto-option:hover {
+  box-shadow: inset 0 0 0 50px var(--dark-blue-color-footer);
 }
 
 .getto-info {
-  padding: 50px;
+  display: none;
 }
 
+.getto-info-active {
+  display: block;
+
+  padding: 50px;
+}
 .getto-photo-container {
   display: flex;
   justify-content: center;
@@ -747,6 +871,22 @@ button {
 
 .getto-photo1 {
   background-image: url(../assets/transport-photo1.png);
+}
+
+.getto-photo2 {
+  background-image: url(../assets/transport-photo2.png);
+}
+
+.getto-photo3 {
+  background-image: url(../assets/transport-photo3.png);
+}
+
+.getto-photo4 {
+  background-image: url(../assets/transport-photo4.png);
+}
+
+.getto-photo5 {
+  background-image: url(../assets/transport-photo5.png);
 }
 
 /************************************ TICKETS ************************************/
@@ -943,6 +1083,13 @@ button {
   background-position: center center;
 }
 
+.btn-chevron,
+.btn-chevron-history {
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
 .restaurants-interface .left-arrow-icon {
   background-image: url(../assets/left-arrow-icon.png);
 }
@@ -952,9 +1099,15 @@ button {
 }
 
 .restaurants-slider {
+  width: inherit;
+  height: inherit;
+
   display: flex;
 
   padding: 0 30px 0 30px;
+  align-items: center;
+
+  transition: all 0.75s;
 }
 
 .restaurant {
@@ -970,6 +1123,23 @@ button {
   background-position: center center;
 }
 
+.slider-image {
+  opacity: 1;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.slider-image-active {
+  opacity: 1;
+}
+
+.slider-image-deactive,
+.history-item-deactive {
+  display: none;
+}
+
 .restaurant-photo1 {
   background-image: url(../assets/restaurants-photo1.png);
 }
@@ -980,6 +1150,14 @@ button {
 
 .restaurant-photo3 {
   background-image: url(../assets/restaurants-photo3.png);
+}
+
+.restaurant-photo4 {
+  background-image: url(../assets/restaurants-photo4.png);
+}
+
+.restaurant-photo5 {
+  background-image: url(../assets/restaurants-photo5.png);
 }
 
 .restaurant-info {
@@ -1019,6 +1197,8 @@ button {
 
 .restaurants-button button {
   margin-left: 30px;
+
+  cursor: pointer;
 }
 
 /************************************ ROUTES ************************************/
@@ -1295,13 +1475,7 @@ button {
 .no-touch .cd-timeline-navigation a.inactive:hover {
   border-color: var(--white-color);
 }
-.cd-horizontal-timeline .events-content {
-  /* position: relative;
-  overflow: hidden;
-  -webkit-transition: height 0.4s;
-  -moz-transition: height 0.4s;
-  transition: height 0.4s;*/
-}
+
 .cd-horizontal-timeline .events-content li {
   position: absolute;
   z-index: 1;
@@ -1472,16 +1646,64 @@ button {
   margin-bottom: 120px;
 }
 
-.route1 .route-photo {
-  background-image: url(../assets/routes-varanger-photo1.jpg);
+.route1-photo1 {
+  background-image: url(../assets/routes-varanger-photo1.png);
 }
 
-.route2 .route-photo {
-  background-image: url(../assets/routes-rondane-photo1.jpg);
+.route1-photo2 {
+  background-image: url(../assets/routes-varanger-photo2.png);
 }
 
-.route3 .route-photo {
-  background-image: url(../assets/routes-atlanterhavsvegen-photo1.jpg);
+.route1-photo3 {
+  background-image: url(../assets/routes-varanger-photo3.png);
+}
+
+.route1-photo4 {
+  background-image: url(../assets/routes-varanger-photo4.png);
+}
+
+.route1-photo5 {
+  background-image: url(../assets/routes-varanger-photo5.png);
+}
+
+.route2-photo1 {
+  background-image: url(../assets/routes-rondane-photo1.png);
+}
+
+.route2-photo2 {
+  background-image: url(../assets/routes-rondane-photo2.png);
+}
+
+.route2-photo3 {
+  background-image: url(../assets/routes-rondane-photo3.png);
+}
+
+.route2-photo4 {
+  background-image: url(../assets/routes-rondane-photo4.png);
+}
+
+.route2-photo5 {
+  background-image: url(../assets/routes-rondane-photo5.png);
+}
+
+.route3-photo1 {
+  background-image: url(../assets/routes-atlanterhavsvegen-photo1.png);
+}
+
+.route3-photo2 {
+  background-image: url(../assets/routes-atlanterhavsvegen-photo2.png);
+}
+
+.route3-photo3 {
+  background-image: url(../assets/routes-atlanterhavsvegen-photo3.png);
+}
+
+.route3-photo4 {
+  background-image: url(../assets/routes-atlanterhavsvegen-photo4.png);
+}
+
+.route3-photo5 {
+  background-image: url(../assets/routes-atlanterhavsvegen-photo5.png);
 }
 
 .route-photo h1 {
@@ -1529,6 +1751,10 @@ button {
 
 .activity-text {
   width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .activity-photo {
@@ -1730,21 +1956,14 @@ button {
   padding: 60px 120px 0 120px;
 }
 
-.offices-map {
+.offices-map svg {
   width: 678.71px;
   height: 831.9px;
-
-  background-image: url(../assets/map.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 
   flex: 1;
 }
 
 .office-info {
-  width: max-content;
-
   padding: 60px;
 
   background-color: var(--blue-color);
@@ -1753,6 +1972,10 @@ button {
   position: relative;
   right: 190px;
   z-index: 9999;
+}
+
+.offices-interface .city-active {
+  flex: none;
 }
 
 .office-info h2,
@@ -1858,6 +2081,30 @@ button {
   font-size: 1.3em;
 }
 
+.footer-section2 ul li a,
+.footer-section3 ul li a {
+  background: linear-gradient(0deg, white, white) no-repeat right bottom / 0
+    var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+.footer-section2 ul li a:where(:hover, :focus-visible),
+.footer-section3 ul li a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.footer-section2 ul li a,
+.footer-section3 ul li a {
+  color: var(--white-color);
+
+  text-decoration: none;
+  line-height: 1;
+}
+
 .footer-section4 {
   display: flex;
   flex-direction: column;
@@ -1911,6 +2158,17 @@ button {
 
   .home {
     padding: 60px;
+  }
+
+  /************************************ CITIES ************************************/
+
+  .cities .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cities-map svg {
+    margin-top: 60px;
   }
 
   /************************************ HISTORY ************************************/
@@ -2060,7 +2318,7 @@ button {
     left: 60px;
   }
 
-  .offices-map {
+  .offices-map svg {
     flex: none;
   }
 
@@ -2098,7 +2356,7 @@ button {
     margin-bottom: 50px;
   }
 
-  .cities-map {
+  .cities-map svg {
     flex: none;
   }
 
@@ -2322,7 +2580,7 @@ button {
     flex-direction: column;
   }
 
-  .offices-map {
+  .offices-map svg {
     flex: none;
 
     margin-bottom: 60px;
@@ -2395,9 +2653,11 @@ button {
     height: 239.77px;
   }
 
-  .cities-map {
+  .cities-map svg {
     width: 100%;
     height: 410.97px;
+
+    margin: 0;
   }
 
   /************************************ HISTORY ************************************/
@@ -2477,6 +2737,10 @@ button {
 
   .getto-options {
     justify-content: center;
+  }
+
+  .getto-options .active:hover {
+    box-shadow: inset 0 0 0 50px var(--dark-blue-color);
   }
 
   .getto-option2,
@@ -2759,7 +3023,7 @@ button {
     position: static;
   }
 
-  .offices-map {
+  .offices-map svg {
     width: 450px;
     height: 410.97px;
   }
@@ -2780,6 +3044,10 @@ button {
 
   .office-info p {
     font-size: 1em;
+  }
+
+  .office-location .location-icon {
+    width: 17.33px;
   }
 
   /************************************ PARTNERS ************************************/
